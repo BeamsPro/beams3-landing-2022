@@ -1,0 +1,408 @@
+@media (max-width : 1320px){
+    
+	.content_inside{
+		width: 1080px;
+	}
+	
+	.profit_case{
+		width: 340px;
+		margin-right: 30px;
+	}
+	
+	.main_pic_central_pic{
+		left: 80px;
+	}
+	
+	.main_pic_mobile{
+		right: 20px;
+	}
+	
+	.main_pic_connect{
+		width: 110px;
+	}
+	
+	.case_one{
+		width: 340px;
+		padding: 20px 24px;
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
+	
+	.case_icons{
+		bottom: 24px;
+		left: 24px;
+	}
+	
+	.oppo_case_pic{
+		width: 710px;
+	}
+	
+	.oppo_case_desc{
+		width: 370px;
+		padding-right: 30px;
+	}
+	
+	.oppo_case_desc.go_revert{
+		padding-left: 30px;
+	}
+	
+	.case_one.go_big_dark{
+		width: 520px;
+		margin-right: 40px;
+	}
+	
+	.case_one_hover{
+		padding: 20px 24px;
+	}
+	
+	.case_one_big_but{
+		bottom: 24px;
+		left: 24px;
+		width: 292px;
+	}
+	
+	.review_case{
+		width: 710px;
+	}
+	
+	.que_block{
+		padding-left: 24px;
+	}
+    
+}
+
+@media (max-width : 1160px){
+	
+	.top_bar{
+		padding: 0 3%;
+	}
+	
+	.top_bar_line{
+		display: none;
+	}
+	
+	.top_bar_menu{
+		display: none;
+	}
+	
+	.top_bar_admenu{
+		display: block;
+	}
+    
+	.content_inside{
+		width: 94%;
+	}
+	
+	.main_pic.content_inside{
+		width: 100%;
+		height: auto;
+	}
+	
+	.main_pic_central_pic{
+		position: relative;
+		left: 10%;
+		width: 80%;
+		height: auto;
+	}
+	
+	.main_pic_3blocks{
+		top: 40px;
+	}
+	
+	.main_pic_connect{
+		top: 60px;
+	}
+	
+	.main_pic_mobile{
+		display: none;
+	}
+	
+	.big_title{
+		font-size: 40px;
+		line-height: 60px;
+	}
+	
+	.profit_case{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	
+	.profit_case:nth-child(3n){
+		margin-bottom: 0;
+	}
+	
+	.case_one{
+		width: 100%;
+		margin-right: 0;
+	}
+	
+	.case_one.go_big_dark{
+		width: 100%;
+		margin-right: 0;
+	}
+	
+	.oppo_case{
+		height: auto;
+	}
+	
+	.oppo_case_pic{
+		float: none;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	
+	.oppo_case_desc{
+		float: none;
+		height: auto;
+		width: 100%;
+		padding-right: 0;
+	}
+	
+	.oppo_case_desc.go_revert{
+		padding-left: 0;
+	}
+	
+	.main_but.go_center_white{
+		margin-top: 20px;
+	}
+	
+	.main_but.go_center{
+		margin-top: 20px;
+	}
+	
+	.review_case{
+		width: 100%;
+		height: auto;
+		padding: 30px;
+		font-size: 24px;
+		line-height: 36px;
+		padding-bottom: 140px;
+	}
+	
+	.review_case_who{
+		left: 30px;
+	}
+	
+	.review_case_pad{
+		right: 30px;
+	}
+	
+	.review_case_icos{
+		display: none;
+	}
+	
+	.review_case_icopad{
+		margin: 15px 0;
+		margin-left: 10px;
+	}
+	
+	.que_block_title{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	
+	.footer{
+		padding: 20px 3%;
+	}
+	
+	.cookie_case{
+		left: 3%;
+		bottom: 20px;
+		width: 94%;
+	}
+	
+	.goglobal_close{
+		right: 3%;
+	}
+	
+	.goglobal_block{
+		width: 100%;
+	}
+	
+	.connect_options_block{
+		position: relative;
+		width: 100%;
+		height: auto;
+		padding: 60px 0;
+	}
+	
+	.connect_feed_block{
+		position: relative;
+		width: 100%;
+		left: 0;
+		height: auto;
+		padding: 60px 0;
+	}
+	
+	.connect_options_block_center{
+		top: 0;
+		width: 96%;
+	}
+	
+	.connect_feed_block_center{
+		top: 0;
+		width: 96%;
+	}
+	
+	.connect_logo{
+		display: none;
+	}
+	
+	.connect_logo.go_ad{
+		display: block;
+	}
+    
+}
+
+@media (max-width : 660px){
+	
+	.top_but{
+		display: none;
+	}
+	
+	.top_but_call{
+		display: none;
+	}
+	
+	.main_but{
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	
+	.main_but.go_price{
+		margin-bottom: 0;
+	}
+	
+	.big_title{
+		font-size: 30px;
+		line-height: 40px;
+	}
+	
+	.big_subtitle{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	
+	.profit_case{
+		padding-top: 25px;
+	}
+	
+	.profit_title{
+		font-size: 18px;
+		line-height: 24px;
+	}
+	
+	.main_pic_central_pic{
+		position: relative;
+		left: 0;
+		width: 90%;
+		height: auto;
+	}
+	
+	.main_pic_3blocks{
+		display: none;
+	}
+	
+	.main_pic_connect{
+		bottom: 30px;
+		right: 0;
+		top: auto;
+	}
+	
+	.client_logo{
+		display: inline-block;
+		width: 140px;
+		height: 70px;
+		margin: 0 10px;
+	}
+	
+	.block_title{
+		font-size: 24px;
+		line-height: 36px;
+		margin-bottom: 50px;
+	}
+	
+	.oppo_case_pic{
+		height: 320px;
+	}
+	
+	.footer{
+		padding: 40px 3%;
+	}
+	
+	.footer_socials{
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
+	.footer_social{
+		float: none;
+		display: inline-block;
+		margin-right: 0;
+		margin: 0 5px;
+	}
+	
+	.footer_policy{
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+	
+	.footer_sk{
+		float: none;
+		display: block;
+		width: 100px;
+		height: auto;
+		margin: 0 auto;
+	}
+	
+	.footer_sk img{
+		display: block;
+		width: 100%;
+		height: auto;	
+	}
+	
+	.brbr{
+		display: none;
+	}
+	
+	.admenu_but{
+		display: block;
+	}
+	
+	.connect_title{
+		font-size: 24px;
+		line-height: 36px;
+	}
+	
+	.content_page{
+		padding: 60px 0;
+	}
+
+	.content_page a{
+		color: #000;
+		text-decoration: underline;
+	}
+
+	.content_page a:hover{
+		text-decoration: none;
+	}
+
+	.content_page h1{
+		font-size: 28px;
+		line-height: 36px;
+	}
+
+	.content_page h2{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	
+}

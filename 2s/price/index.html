@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Цены — Beams :: Платформа для онлайн и гибридных мероприятий</title>
+	<meta name="Author" CONTENT="Powered by Beams">
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"> 
+	<meta name="keywords" content="">
+	<meta name="description" content="Нам доверяют организаторы амбициозных event-проектов с участием спикеров крупнейших компаний: Яндекс, Microsoft, Facebook, Google, Nike, ВКонтакте, OneTwoTrip, Сбербанк, American Express и другие.">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../css/pages.css">
+    <link rel="stylesheet" type="text/css" href="../css/adaptive.css">
+    
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, minimal-ui"/>
+    
+    <meta property="og:title" content="Beams">
+    <meta property="og:description" content="Online and hybrid events">
+    <meta property="og:site_name" content="Beams">
+    <meta property="og:url" content="https://beams.pro/">
+    <meta property="og:image" content="../beams.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Beams">
+    <meta property="twitter:description" content="Online and hybrid events">
+    <meta property="twitter:url" content="https://beams.pro/">
+    <meta property="twitter:image" content="../beams.png">
+
+    <meta property="vk:image" content="../beams.png">
+    
+    <script src="../menu.js"></script>
+
+	<script src="../js/j1.js"></script>
+	<script src="../js/j2.js"></script>
+    <script src="../js/site.js"></script>
+    
+    <script>
+
+        $(function(){
+            $(".menu_move_to").click(function(){
+                rel = $(this).attr("rel");
+                element = this
+                move_to = 0;
+                if(rel != ""){
+                    var offset = $("#" + rel).offset();
+                    move_to = offset.top;
+                }
+                $("html, body").stop().animate({
+                        scrollTop: move_to + "px"
+                    }, 1000 , function(){
+                        history.pushState(rel, $(element).text());
+                        window.location.hash = rel;
+                    });
+                return false;
+            });
+
+            $(window).scroll(function(){
+                    var items = Array();
+                    $(".mixxcontent .menu_move_to").each(function(i,e){
+                        items.push(e);
+                    }); 
+                    aaa = items.reverse();
+                    $(aaa).each(function(i1,e1){
+                        r1 = $(e1).attr("rel");
+                        if(r1 != ""){
+                            console.log($(aaa).text());
+                            os1 = $("#" + r1).offset();
+                            s1 = $(window).scrollTop();
+                            if(os1.top >= s1){
+                                $(aaa).removeClass("active");   
+                                $(e1).addClass("active");
+                            }
+                        }
+                    });
+            });
+        });
+
+    </script>
+    
+</head>
+
+<body>
+    
+    <div class="top_bar">
+        <div onclick="mobilemenu()" class="top_burder" id="burger_menu"><img src="../img/burger.svg"></div>
+		<div class="top_socials">
+			<a href="https://www.facebook.com/groups/1816464185182390" target="_blank" class="top_social"><img src="../img/fb.svg"></a>
+			<a href="https://www.youtube.com/channel/UCyKF0uY6mKqTe4wx2fUOESQ" target="_blank" class="top_social"><img src="../img/yt.svg"></a>
+		</div>
+        <a href="../en/" class="top_en font_bold">Eng</a>
+        <div class="top_bar_menu">
+            <a href="../" class="font_bold">Beams</a>
+        </div>
+        <div class="top_bar_menu">
+            <a href="../events" class="font_bold">Мероприятия</a>
+        </div>
+        <a href="../#order" rel="order" class="top_bar_but font_bold menu_move_to">Запросить демо</a>
+        <!--<a href="../price/" class="top_bar_but_a font_bold">Смотреть цены<span class="top_price">от 49 000 р.</span></a>-->
+        <div class="top_bar_price font_bold">от 49 900 р.</div>
+        <div class="cle"></div>
+    </div>
+    
+    <div class="top_mobile_menu" id="top_mobile">
+        <a href="../" class="top_mobile_menu_a font_bold">Beams</a>
+        <a href="../events" class="top_mobile_menu_a go_active font_bold">Мероприятия</a>
+    </div>
+    
+    <div class="top_bar_place" id="beams"></div>
+    
+    <!--<a href="#" class="top_att_but font_bold">Приглашем на Beams Conf: конференция об организации онлайн и гибридных мероприятий</a>-->
+    
+    <div class="main_block">
+        <div class="main_block_inside">
+            <a href="../"><div class="main_logo_center"><img src="../img/logo.svg"></div></a>
+            <a href="../" class="main_logo_center_mobile"><img src="../img/logo_mini.svg"></a>
+            <div class="title_superbig_center font_bold">
+                Четыре тарифа:
+            </div>
+            <div>
+                <div class="price_halfcase font_mid inprice">
+					<div class="main_events_pic go_big"><img src="../img/beams_price.png"></div>
+                    <div class="title_mid font_bold">Beams</div>
+                    <div class="price_halfcase_text font_mid">
+                        Все компонтенты и&nbsp;библиотеки Beams. Базовая настройка и&nbsp;оформление платформы. Помощь в&nbsp;наполнении контентом и&nbsp;техническая поддержка.
+                    </div>
+                    
+                    <div class="price_halfcase_lineoption">
+                        Количество потоков
+                        <div class="price_halfcase_lineoption_yn">Не ограничено</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_camera.png"></div>
+                    </div>
+                    <div class="price_halfcase_lineoption">
+                        Количество участников
+                        <div class="price_halfcase_lineoption_yn">1000</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_smile.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Свой домен первого уровня
+                        <div class="price_halfcase_lineoption_yn">Нет</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_domain.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Английская версия
+                        <div class="price_halfcase_lineoption_yn">Нет</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_eng.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Наполнение контентом
+                        <div class="price_halfcase_lineoption_yn">20 ед.</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_con.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Обучение администрованию
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_yes.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Приоритетная поддержка
+                        <div class="price_halfcase_lineoption_yn">Нет</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_sup.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Персональный менеджер
+                        <div class="price_halfcase_lineoption_yn">Нет</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_manager.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Доступность платформы
+                        <div class="price_halfcase_lineoption_yn">30 дней</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_time.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Срок запуска
+                        <div class="price_halfcase_lineoption_yn">От 3 рабочих дней</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_rocket.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Интеграции и доп.разработка
+                        <div class="price_halfcase_lineoption_yn">Нет</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_int.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        White label
+                        <div class="price_halfcase_lineoption_yn">Нет</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_white.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Дополнительные 30 дней
+                        <div class="price_halfcase_lineoption_yn">9 900 р.</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_time.png"></div>
+                    </div>
+                    <div class="price_halfcase_num inprice font_bold">49 900 р.</div>
+                </div>
+				
+				<div class="price_halfcase font_mid inprice">
+					<div class="main_events_pic go_big"><img src="../img/beams_price_pro.png"></div>
+                    <div class="title_mid font_bold">Beams Pro</div>
+                    <div class="price_halfcase_text font_mid">
+                        Pro-версия для&nbsp;требовательных организаторов. Индивидуальная настройка и&nbsp;оформление. Базовое наполнение. Приоритетная поддержка.
+                    </div>
+                    
+                    <div class="price_halfcase_lineoption">
+                        Количество потоков
+                        <div class="price_halfcase_lineoption_yn">Не ограничено</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_camera.png"></div>
+                    </div>
+                    <div class="price_halfcase_lineoption">
+                        Количество участников
+                        <div class="price_halfcase_lineoption_yn">2500</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_smile.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Свой домен первого уровня
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_domain.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Английская версия
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_eng.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Наполнение контентом
+                        <div class="price_halfcase_lineoption_yn">50 ед.</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_con.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Обучение администрованию
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_yes.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Приоритетная поддержка
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_sup.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Персональный менеджер
+                        <div class="price_halfcase_lineoption_yn">Нет</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_manager.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Доступность платформы
+                        <div class="price_halfcase_lineoption_yn">30 дней</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_time.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Срок запуска
+                        <div class="price_halfcase_lineoption_yn">От 5 рабочих дней</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_rocket.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Интеграции и доп.разработка
+                        <div class="price_halfcase_lineoption_yn">Нет</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_int.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        White label
+                        <div class="price_halfcase_lineoption_yn">Нет</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_white.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Дополнительные 30 дней
+                        <div class="price_halfcase_lineoption_yn">19 900 р.</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_time.png"></div>
+                    </div>
+                    <div class="price_halfcase_num inprice font_bold">99 900 р.</div>
+                </div>
+				
+				<div class="price_halfcase font_mid inprice">
+					<div class="main_events_pic go_big"><img src="../img/beams_price_max.png"></div>
+                    <div class="title_mid font_bold">Beams Max</div>
+                    <div class="price_halfcase_text font_mid">
+                        Максимальная версия для&nbsp;крупных мероприятий. Индивидуальный подход и&nbsp;персональный менеджер для&nbsp;оперативного решения всех задач организатора.
+                    </div>
+                    
+                    <div class="price_halfcase_lineoption">
+                        Количество потоков
+                        <div class="price_halfcase_lineoption_yn">Не ограничено</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_camera.png"></div>
+                    </div>
+                    <div class="price_halfcase_lineoption">
+                        Количество участников
+                        <div class="price_halfcase_lineoption_yn">5000</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_smile.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Свой домен первого уровня
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_domain.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Английская версия
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_eng.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Наполнение контентом
+                        <div class="price_halfcase_lineoption_yn">100 ед.</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_con.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Обучение администрованию
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_yes.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Приоритетная поддержка
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_sup.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Персональный менеджер
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_manager.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Доступность платформы
+                        <div class="price_halfcase_lineoption_yn">30 дней</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_time.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Срок запуска
+                        <div class="price_halfcase_lineoption_yn">От 5 рабочих дней</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_rocket.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Интеграции и доп.разработка
+                        <div class="price_halfcase_lineoption_yn">Нет</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_int.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        White label
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_white.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Дополнительные 30 дней
+                        <div class="price_halfcase_lineoption_yn">29 900 р.</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_time.png"></div>
+                    </div>
+                    <div class="price_halfcase_num inprice font_bold">199 900 р.</div>
+                </div>
+				
+				<div class="price_halfcase font_mid inprice">
+					<div class="main_events_pic go_big"><img src="../img/beams_price_enter.png"></div>
+                    <div class="title_mid font_bold">Beams Enterprise</div>
+                    <div class="price_halfcase_text font_mid">
+                        Когда требуется заказная разработка на базе Beams.
+                    </div>
+                    
+                    <div class="price_halfcase_lineoption">
+                        Количество потоков
+                        <div class="price_halfcase_lineoption_yn">Не ограничено</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_camera.png"></div>
+                    </div>
+                    <div class="price_halfcase_lineoption">
+                        Количество участников
+                        <div class="price_halfcase_lineoption_yn">от 5000</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_smile.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Свой домен первого уровня
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_domain.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Английская версия
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_eng.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Наполнение контентом
+                        <div class="price_halfcase_lineoption_yn">от 100 ед.</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_con.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Обучение администрованию
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_yes.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Приоритетная поддержка
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_sup.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Персональный менеджер
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_manager.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Доступность платформы
+                        <div class="price_halfcase_lineoption_yn">30 дней</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_time.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Срок запуска
+                        <div class="price_halfcase_lineoption_yn">От 10 рабочих дней</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_rocket.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Интеграции и доп.разработка
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_int.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        White label
+                        <div class="price_halfcase_lineoption_yn">Да</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_white.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Дополнительные 30 дней
+                        <div class="price_halfcase_lineoption_yn">Индивидуально</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="../img/price_time.png"></div>
+                    </div>
+                    <div class="price_halfcase_num inprice font_bold">Индивидуально</div>
+                </div>
+				
+                <div class="cle"></div>
+            </div>
+			
+			
+			
+        </div>
+    </div>
+	
+	<div class="main_block go_bg">
+		<div class="title_superbig_center go_price font_bold">
+                Экономьте 30% с&nbsp;годовой&nbsp;подпиской. Количество событий на&nbsp;одной платформе —&nbsp;не&nbsp;ограничено.
+            </div>
+	</div>
+    
+    <!--<div class="footer_line"></div>-->
+    <div class="main_block go_footer">
+        <div class="main_block_inside">
+            <div class="title_superbig_center font_bold">
+                Остались вопросы?
+            </div>
+            <a href="mailto:hello@beams.pro" class="super_big_email font_bold">hello@beams.pro</a>
+            <a href="../beams.pdf" target="_blank" class="download_pdf font_bold">Скачать презентацию .pdf</a>
+            <div class="footer_logo"><img src="../img/logo.svg"></div>
+        </div>
+    </div>
+    
+
+</body>
+</html>

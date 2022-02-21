@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+:root {
+    --color-black: #000;
+    --color-white: #FFF;
+    /* --- */
+    --color-main: #2E2F6A;
+    --color-light: #EAEAF0;
+    --color-att: #FD027A;
+    --color-int: #31B5FF;
+    --color-active: #FFB600;
+    --color-darkline: #42438A;
+    /* --- */
+    --border-big: 100px;
+    --border-20: 20px;
+    --border-10: 10px;
+    --border-6: 6px;
+    --border-4: 4px;
+}

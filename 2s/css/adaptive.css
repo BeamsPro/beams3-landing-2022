@@ -1,0 +1,486 @@
+@media (max-width : 1640px){
+    
+    .capa_cms_case{
+        height: 360px;
+    }
+    
+    .price_halfcase{
+        height: 440px;
+    }
+    
+    .main_events_case{
+        height: 400px;
+    }
+    
+    .capa_cms_case.go_en{
+        height: 400px;
+    }
+    
+    .main_block_banner{
+        height: 200px;
+    }
+    
+    .feedback_policy{
+        width: 60%;
+    }
+    
+}
+
+@media (max-width : 1340px){
+    
+    .main_logo{
+        height: 50px;
+    }
+    
+    .title_big{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    
+    .top_bar{
+        padding: 0 3%;
+    }
+    
+    .main_block_inside{
+        padding: 0 3%;
+    }
+    
+    .main_block_banner{
+        width: 94%;
+        height: 200px;
+    }
+    
+    .main_text{
+        left: 3%;
+    }
+    
+    .capa_cms_case{
+        width: 48%;
+    }
+    
+    .capa_cms_case.go_en{
+        height: 300px;
+    }
+    
+    .capa_cms_case:nth-child(2n){
+        margin-right: 0;
+    }
+    
+    .main_events_case{
+        width: 48%;
+        margin-right: 4%;
+        height: 360px;
+    }
+    
+    .main_events_case:nth-child(3n){
+        margin-right: 4%;
+    }
+    
+    .main_events_case:nth-child(2n){
+        margin-right: 0;
+    }
+    
+    .feedback_policy{
+        width: 70%;
+    }
+    
+    .cookie_window{
+        left: 3%;
+        width: 94%;
+    }
+
+}
+
+@media (max-width : 1240px){
+    
+    .top_bar_menu_sub_a{
+        display: none;
+    }
+    
+    .main_block_page{
+        height: auto;
+        overflow: auto;
+        margin-bottom: 40px;
+    }
+    
+    .main_block_banner{
+        height: 160px;
+        margin-bottom: 40px;
+    }
+    
+    .main_text{
+        position: relative;
+        top: auto;
+        left: 3%;
+        width: 94%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    
+    .main_but{
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .main_pic{
+        position: relative;
+        top: auto;
+        left: 3%;
+        width: 94%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .main_pic img{
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    
+    .main_logo_center{
+        display: none;
+        margin-bottom: 20px;
+    }
+    
+    .main_logo_center_mobile{
+        display: block;
+    }
+    
+    .super_big_email{
+        font-size: 90px;
+        line-height: 100px;
+    }
+    
+    .feedback_policy{
+        width: 80%;
+    }
+    
+}
+
+@media (max-width : 980px){
+    
+    .top_bar_menu{
+        display: none;
+    }
+    
+    .top_burder{
+        display: block;
+    }
+    
+    .top_en{
+        float: right;
+        margin-right: 0;
+    }
+	
+	.top_socials{
+		float: right;
+		margin-right: 0;
+		margin-left: 14px;
+	}
+	
+	.top_social{
+		margin-right: 0;
+		margin-left: 6px;
+	}
+    
+    .top_bar_but_a{
+        display: none;
+    }
+    
+    .top_bar_price{
+        display: none;
+    }
+    
+    .top_bar_but{
+        float: left;
+        margin-left: 0;
+    }
+    
+    .capa_block{
+        height: auto;
+        margin-bottom: 40px;
+    }
+    
+    .capa_pic{
+        position: relative;
+        width: 100%;
+        height: 360px;
+    }
+    
+    .capa_pic.go_design{
+        margin-bottom: 30px;
+    }
+    
+    .capa_text{
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-right: 0;
+        margin-bottom: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .capa_date{
+        position: relative;
+        bottom: auto;
+        margin-top: 20px;
+    }
+    
+    .capa_cms_case{
+        width: 100%;
+        margin-right: 0;
+        height: auto;
+        padding-bottom: 40px;
+    }
+    
+    .capa_cms_case.go_price{
+        height: auto;
+    }
+    
+    .capa_cms_case.go_en{
+        height: auto;
+    }
+    
+    .capa_price_nume{
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 30px;
+    }
+    
+    .main_events_case{
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        padding-bottom: 40px;
+    }
+    
+    .title_superbig_center{
+        width: 90%;
+    }
+	
+	.price_big_halfcase{
+		width: 100%;
+        height: auto;
+        margin-right: 0;
+	}
+	
+	.price_big_halfcase:nth-child(1){
+		border-bottom: 1px dashed var(--color-light);
+	}
+    
+    .price_halfcase{
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+    
+    .price_halfcase_num{
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 30px;
+    }
+    
+    .price_halfcase_text{
+        height: auto;
+        margin-bottom: 40px; 
+    }
+    
+    .price_line{
+        border-radius: var(--border-20);
+    }
+    
+    .price_line_text{
+        float: none;
+        margin-bottom: 10px;
+    }
+    
+    .price_line_num{
+        float: none;
+    }
+    
+    .super_big_email{
+        font-size: 70px;
+        line-height: 90px;
+    }
+    
+}
+
+@media (max-width : 800px){
+    
+    .main_block{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .main_but{
+        width: 100%;
+    }
+    
+    .big_center_but{
+        width: 100%;
+    }
+    
+    .title_big{
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 24px;
+    }
+
+    .title_mid{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 24px;
+    }
+
+    .title_superbig_center{
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .capa_pic{
+        height: 240px;
+    }
+    
+    .capa_pic_logo{
+        width: 200px;
+        height: 200px;
+        margin-top: -100px;
+        margin-left: -100px;
+    }
+    
+    .capa_cms_case{
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+    
+    .main_events_case{
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+	
+	.price_big_halfcase{
+		padding: 20px;
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+    
+    .price_halfcase{
+        padding: 20px;
+    }
+    
+    .price_halfcase_num{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .price_halfcase_lineoption{
+        height: auto;
+        line-height: 30px;
+        padding: 10px 0;
+    }
+    
+    .price_halfcase_lineoption.ohno{
+        display: none;
+    }
+    
+    .price_halfcase_lineoption_yn{
+        position: relative;
+        top: auto;
+        right: auto;
+        text-align: left;
+    }
+    
+    .price_halfcase_lineoption_yn_ico{
+        display: none;
+    }
+	
+	.price_halfcase_lineoption_price{
+		float: none;
+	}
+    
+    .price_halfcase_lineoption_mobile{
+        display: inline-block;
+    }
+    
+    .price_line{
+        padding: 10px 20px;
+    }
+    
+    .super_big_email{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    
+    .download_pdf{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    .review_ico{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .review_block{
+        width: 90%;
+    }
+    
+    .feedback_block{
+        width: 94%;
+    }
+    
+    .feedback_input{
+        padding: 10px 20px;
+    }
+    
+    .feedback_but{
+        width: 100%;
+    }
+    
+    .feedback_policy{
+        width: 100%;
+    }
+    
+    .main_block_banner{
+        height: 120px;
+    }
+    
+    .cookie_window{
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-right: 20px;
+        padding-bottom: 14px;
+    }
+    
+    .cookie_but{
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 10px;
+    }
+    
+}
+
+@media (max-width : 540px){
+	
+	.main_block_banner{
+        height: 100px;
+    }
+    
+	/*
+    .main_block_banner{
+        height: auto;
+        background: none;
+    }
+    
+    .main_block_banner img{
+        display: block;
+    }
+	*/
+    
+}

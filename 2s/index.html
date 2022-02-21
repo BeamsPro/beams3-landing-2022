@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Beams :: Платформа для онлайн и гибридных мероприятий</title>
+	<meta name="Author" CONTENT="Powered by Beams">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+	<meta name="keywords" content="">
+	<meta name="description" content="Нам доверяют организаторы амбициозных event-проектов с участием спикеров крупнейших компаний: Яндекс, Microsoft, Facebook, Google, Nike, ВКонтакте, OneTwoTrip, Сбербанк, American Express и другие.">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/pages.css">
+    <link rel="stylesheet" type="text/css" href="css/adaptive.css">
+    
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, minimal-ui"/>
+    
+    <meta property="og:title" content="Beams">
+    <meta property="og:description" content="Online and hybrid events">
+    <meta property="og:site_name" content="Beams">
+    <meta property="og:url" content="https://beams.pro/">
+    <meta property="og:image" content="beams.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Beams">
+    <meta property="twitter:description" content="Online and hybrid events">
+    <meta property="twitter:url" content="https://beams.pro/">
+    <meta property="twitter:image" content="beams.png">
+
+    <meta property="vk:image" content="beams.png">
+    
+    <script src="menu.js"></script>
+    <script src="js/j1.js"></script>
+	<script src="js/j2.js"></script>
+    <script src="js/site.js"></script>
+    
+    <script>
+
+        $(function(){
+            $(".menu_move_to").click(function(){
+                rel = $(this).attr("rel");
+                element = this
+                move_to = 0;
+                if(rel != ""){
+                    var offset = $("#" + rel).offset();
+                    move_to = offset.top;
+                }
+                $("html, body").stop().animate({
+                        scrollTop: move_to + "px"
+                    }, 1000 , function(){
+                        history.pushState(rel, $(element).text());
+                        window.location.hash = rel;
+                    });
+                return false;
+            });
+
+            $(window).scroll(function(){
+                    var items = Array();
+                    $(".mixxcontent .menu_move_to").each(function(i,e){
+                        items.push(e);
+                    }); 
+                    aaa = items.reverse();
+                    $(aaa).each(function(i1,e1){
+                        r1 = $(e1).attr("rel");
+                        if(r1 != ""){
+                            console.log($(aaa).text());
+                            os1 = $("#" + r1).offset();
+                            s1 = $(window).scrollTop();
+                            if(os1.top >= s1){
+                                $(aaa).removeClass("active");   
+                                $(e1).addClass("active");
+                            }
+                        }
+                    });
+            });
+        });
+
+    </script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180213897-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-180213897-1');
+    </script>
+    
+    <!-- Carrot quest BEGIN -->
+
+    <script type="text/javascript">
+
+    !function(){function t(t,e){return function(){window.carrotquestasync.push(t,arguments)}}if("undefined"==typeof carrotquest){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//cdn.carrotquest.app/api.min.js",document.getElementsByTagName("head")[0].appendChild(e),window.carrotquest={},window.carrotquestasync=[],carrotquest.settings={};for(var n=["connect","track","identify","auth","oth","onReady","addCallback","removeCallback","trackMessageInteraction"],a=0;a<n.length;a++)carrotquest[n[a]]=t(n[a])}}(),carrotquest.connect("42037-be4d366bd100cb76b79fd564b8");
+
+    </script>
+
+    <!-- Carrot quest END -->
+
+</head>
+
+<body>
+	
+	<div class="cookie_window" id="cookies_block">
+		Оставаясь на&nbsp;этом сайте, вы&nbsp;соглашаетесь с&nbsp;использованием файлов cookie. Подробности читайте в&nbsp;нашей <a href="docs/policy.pdf" target="_blank">политике конфиденциальности</a>.
+		<div onclick="cookiesfiles()" class="cookie_but font_bold">Хорошо</div>
+	</div>
+    
+    <div class="top_bar">
+        <div onclick="mobilemenu()" class="top_burder" id="burger_menu"><img src="img/burger.svg"></div>
+		<div class="top_socials">
+			<a href="https://www.facebook.com/groups/1816464185182390" target="_blank" class="top_social"><img src="img/fb.svg"></a>
+			<a href="https://www.youtube.com/channel/UCyKF0uY6mKqTe4wx2fUOESQ" target="_blank" class="top_social"><img src="img/yt.svg"></a>
+		</div>
+        <!--<a href="../" class="top_en font_bold">Новый Beams 3.0</a>-->
+        <div class="top_bar_menu">
+			<a href="../" class="font_bold" style="margin-right: 20px;">Новый Beams 3.0</a>
+            <a href="#beams" rel="beams" class="font_bold font_active menu_move_to">Beams 2.S</a>
+            <a href="#capabilities" rel="capabilities" class="top_bar_menu_sub_a menu_move_to">Возможности</a>
+            <a href="#manager" rel="manager" class="top_bar_menu_sub_a menu_move_to">Управление</a>
+            <a href="#foryou" rel="foryou" class="top_bar_menu_sub_a menu_move_to">Для кого</a>
+            <a href="#cases" rel="cases" class="top_bar_menu_sub_a menu_move_to">Кейсы</a>
+        </div>
+        <div class="top_bar_menu">
+            <a href="events/" class="font_bold">Мероприятия</a>
+        </div>
+		<!--
+		<div class="top_bar_menu">
+            <a href="https://beamsteam.notion.site/beamsteam/Beams-dd563d4f6a4f4f108fd677097ac55140" class="font_bold" target="_blank">Карьера в Beams</a>
+        </div>
+		-->
+        <a href="../connect/" rel="order" class="top_bar_but font_bold menu_move_to">Запросить демо</a>
+        <!--<a href="price/" class="top_bar_but_a font_bold">Смотреть цены<span class="top_price">от 49 000 р.</span></a>-->
+        <div class="top_bar_price font_bold">от 49 900 р.</div>
+        <div class="cle"></div>
+    </div>
+    
+    <div class="top_mobile_menu" id="top_mobile">
+		<a href="../" class="top_mobile_menu_a font_bold">Новый Beams 3.0</a>
+        <a href="#" class="top_mobile_menu_a go_active font_bold">Beams 2.S</a>
+        <a href="events/" class="top_mobile_menu_a font_bold">Мероприятия</a>
+		<!--<a href="https://beamsteam.notion.site/beamsteam/Beams-dd563d4f6a4f4f108fd677097ac55140" class="top_mobile_menu_a font_bold" target="_blank">Карьера в Beams</a>-->
+    </div>
+    
+    <div class="top_bar_place" id="beams"></div>
+    
+    <!--<a href="#" class="top_att_but font_bold">Приглашем на Beams Conf: конференция об организации онлайн и гибридных мероприятий</a>-->
+    
+    <div class="main_block">
+        <div class="main_block_page">
+            <div class="main_text font_big font_big">
+                <div class="main_logo"><img src="img/logo.svg"></div>
+                <div class="title_big font_bold">
+                    Платформа для&nbsp;онлайн
+                    <br>
+                    и&nbsp;гибридных мероприятий
+                </div>
+                Нам доверяют организаторы амбициозных event-проектов с&nbsp;участием спикеров крупнейших компаний: Яндекс, Microsoft, Facebook, Google, Nike, ВКонтакте, OneTwoTrip, Сбербанк, American Express, TikTok и&nbsp;другие.
+                <a href="/events/" class="main_but font_bold">Мероприятия на&nbsp;Beams</a>
+            </div>
+            <div class="main_pic">
+                <img src="img/main.png">
+            </div>
+        </div>
+        
+        <!--<a href="https://youtu.be/Xdc_qP9QTe4" target="_blank" class="main_block_banner" style="background-image: url(img/2s_ban.png);"></a>-->
+        
+        <div class="main_block_inside" id="capabilities">
+            
+            <div class="capa_block">
+                <div class="capa_text font_mid">
+                    <div class="title_mid font_bold">События</div>
+                    Создавайте неограниченное количество событий и&nbsp;потоков в&nbsp;рамках одной платформы: конференции, форумы, встречи, лекции. Разграничивайте доступы для&nbsp;различных групп участников.
+                    <div class="capa_date font_bold"><span class="capa_date_in">от 49 900 р.</span><a href="#order" rel="order" class="menu_move_to">Запросить&nbsp;демо&nbsp;&rang;</a></div>
+                </div>
+                <div class="capa_pic">
+                    <div class="capa_pic_inside" style="background-image: url(img/capa_events.png);"></div>
+                </div>
+            </div>
+            <div class="capa_block">
+                <div class="capa_text go_revert font_mid">
+                    <div class="title_mid font_bold">Трансляции</div>
+                    Каждая трансляция может быть уникальной: от&nbsp;программы до&nbsp;оформления. Эмоции, кнопки действий, вопросы спикерам, опросы участников и&nbsp;голосования. Возможность подключить любой сторонний плеер: Facecast, YouTube, Vimeo, Livestream.
+                </div>
+                <div class="capa_pic go_revert">
+                    <div class="capa_pic_inside" style="background-image: url(img/capa_stream.png);"></div>
+                </div>
+            </div>
+            <div class="capa_block">
+                <div class="capa_text font_mid">
+                    <div class="title_mid font_bold">Участники</div>
+                    Публичные списки участников и&nbsp;карточки спикеров. Разделение на группы: &laquo;Online&raquo; и&nbsp;&laquo;Offline на&nbsp;площадке&raquo;. Уникальный контент для&nbsp;каждого типа участников. Поиск собеседников по&nbsp;интересам.
+                </div>
+                <div class="capa_pic">
+                    <div class="capa_pic_inside" style="background-image: url(img/capa_members.png);"></div>
+                </div>
+            </div>
+            <div class="capa_block">
+                <div class="capa_text go_revert font_mid">
+                    <div class="title_mid font_bold">Нетворкинг</div>
+                    Центр сообщений, раздельные чаты по&nbsp;трансляциям и&nbsp;группам, общение 1&nbsp;на&nbsp;1. Также предусмотрена возможность подлючения сторонних сервисов: Zoom, SpatialChat, Lookoom, Discord и&nbsp;других.
+                    <div class="capa_date font_bold"><span class="capa_date_in">Нужны подробности?</span><a href="#order" rel="order" class="menu_move_to">Запросить&nbsp;демо&nbsp;&rang;</a></div>
+                </div>
+                <div class="capa_pic go_revert">
+                    <div class="capa_pic_inside" style="background-image: url(img/capa_net.png);"></div>
+                </div>
+            </div>
+            <div class="capa_block">
+                <div class="capa_text font_mid">
+                    <div class="title_mid font_bold">Выставки</div>
+                    Интерактивные стенды разных форматов: Большой, Средний, Малый. Уникальное оформление для&nbsp;каждого экспонента. Товары и&nbsp;услуги. Галереи и&nbsp;документы. Кнопки действия. Эксперты онлайн.
+                </div>
+                <div class="capa_pic">
+                    <div class="capa_pic_inside" style="background-image: url(img/capa_expo.png);"></div>
+                </div>
+            </div>
+			
+			<!--
+            <div class="capa_block">
+                <div class="capa_text go_revert font_mid">
+                    <div class="title_mid font_bold">Галереи</div>
+                    Публикуйте фотографии и&nbsp;видео с&nbsp;прошедших мероприятий. Создавайте альбомы и&nbsp;настраивайте комментарии, подключайте кнопки эмоций.
+                </div>
+                <div class="capa_pic go_revert">
+                    <div class="capa_pic_inside" style="background-image: url(img/capa_gallery.png);"></div>
+                </div>
+            </div>
+            <div class="capa_block">
+                <div class="capa_text font_mid">
+                    <div class="title_mid font_bold">Библиотека</div>
+                    Все файлы и&nbsp;документы в&nbsp;одном месте: презентации, сертификаты, ссылки на ресурсы и&nbsp;так далее. Удобная и&nbsp;простая система сортировок.
+                </div>
+                <div class="capa_pic">
+                    <div class="capa_pic_inside" style="background-image: url(img/capa_docs.png);"></div>
+                </div>
+            </div>
+			-->
+
+			<div class="capa_block">
+                <div class="capa_text go_revert font_mid">
+                    <div class="title_mid font_bold">Публичный сайт</div>
+                    Веб-страница сообщества или&nbsp;отдельного мероприятия. Спикеры, трансляции, программа, галерея, партнеры, контакты, типы билетов и&nbsp;регистрация. Возможность подключения сторонних платежных сервисов.
+                </div>
+                <div class="capa_pic go_revert">
+                    <div class="capa_pic_inside" style="background-image: url(img/capa_landing.png);"></div>
+                </div>
+            </div>
+            <div class="capa_block">
+                <div class="capa_text font_mid">
+                    <div class="title_mid font_bold">Кастомизация</div>
+                    Гибкие настройки структуры и&nbsp;оформления платформы. Большая коллекция готовых дизайн-шаблонов и&nbsp;компонентов для&nbsp;быстрого запуска.
+                    <!--<div class="capa_date font_bold"><span class="capa_date_in">Нужны примеры?</span><a href="events/">Смотреть&nbsp;мероприятия&nbsp;&rang;</a></div>-->
+                </div>
+                <div class="capa_pic">
+                    <div class="capa_pic_inside" style="background-image: url(img/capa_des.png);"></div>
+                </div>
+            </div>
+            <div class="title_superbig_center font_bold">
+                Beams прекрасно работает на&nbsp;большинстве устройств: настольные компьютеры, ноутбуки, планшеты, мобильные телефоны, Smart&nbsp;TV.
+            </div>
+            <div class="capa_block" id="manager">
+                <div class="capa_text go_revert font_mid">
+                    <div class="title_mid font_bold">Управляйте легко</div>
+                    Простая и&nbsp;понятная система управления. Меняйте структуру платформы, оформляйте разделы, наполняйте контентом, просматривайте аналитику и&nbsp;многое другое. Самостоятельно в&nbsp;любое время и&nbsp;без ограничений.
+                    <div class="capa_date font_bold"><span class="capa_date_in">Хотите попробовать?</span><a href="#order" rel="order" class="menu_move_to">Запросить&nbsp;демо&nbsp;&rang;</a></div>
+                </div>
+                <div class="capa_pic go_revert">
+                    <div class="capa_pic_inside" style="background-image: url(img/capa_admin.png);"></div>
+                </div>
+            </div>
+            <div class="capa_cms_block">
+                <div class="capa_cms_case font_mid">
+                    <div class="main_events_pic"><img src="img/manager_5.png"></div>
+                    <div class="title_mid font_bold">Безопасность</div>
+                    Множество вариантов уровней доступа для различных типов участников.
+                </div>
+                <div class="capa_cms_case font_mid">
+                    <div class="main_events_pic"><img src="img/manager_3.png"></div>
+                    <div class="title_mid font_bold">Статистика</div>
+                    Количественная и&nbsp;качественная аналитики по&nbsp;действиям участников.
+                </div>
+                <div class="capa_cms_case font_mid">
+                    <div class="main_events_pic"><img src="img/manager_2.png"></div>
+                    <div class="title_mid font_bold">Оповещения</div>
+                    Рассылки, сквозные и&nbsp;персональные оповещения участников.
+                </div>
+                <div class="capa_cms_case font_mid">
+                    <div class="main_events_pic"><img src="img/manager_4.png"></div>
+                    <div class="title_mid font_bold">Интеграции</div>
+                    Расширенные возможности для&nbsp;подключения сторонних сервисов.
+                </div>
+                <div class="cle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main_block go_bg" id="foryou">
+        <div class="main_block_inside">
+            <div class="title_superbig_center font_bold">
+                Организуйте свои события на&nbsp;Beams
+            </div>
+            <div class="main_events_block">
+                <div class="main_events_case font_mid">
+                    <div class="main_events_pic go_big"><img src="img/events_1.png"></div>
+                    <div class="title_mid font_bold">Конференции</div>
+                    Профессиональные и&nbsp;отраслевые конференции с&nbsp;удобными инструментами нетворкинга.
+                </div>
+                <div class="main_events_case font_mid">
+                    <div class="main_events_pic go_big"><img src="img/events_2.png"></div>
+                    <div class="title_mid font_bold">Форумы</div>
+                    Масштабные многопоточные форумы на&nbsp;десятки тысяч участников со&nbsp;всего мира.
+                </div>
+                <div class="main_events_case font_mid">
+                    <div class="main_events_pic go_big"><img src="img/events_3.png"></div>
+                    <div class="title_mid font_bold">Лекции</div>
+                    Публичные и&nbsp;закрытые лекции. Обучающие курсы и&nbsp;семинары. Онлайн-тестирования и&nbsp;опросы на&nbsp;усвоение материалов.
+                </div>
+                <div class="main_events_case font_mid">
+                    <div class="main_events_pic go_big"><img src="img/events_4.png"></div>
+                    <div class="title_mid font_bold">Презентации</div>
+                    Онлайн-презентации новых продуктов и&nbsp;услуг. Выставка предложений с&nbsp;персональными консультантами.
+                </div>
+                <div class="main_events_case font_mid">
+                    <div class="main_events_pic go_big"><img src="img/events_6.png"></div>
+                    <div class="title_mid font_bold">Выставки</div>
+                    Большие возможности по&nbsp;организации виртуальных выставок на&nbsp;десятки и&nbsp;даже сотни экспонентов.
+                </div>
+                <div class="main_events_case font_mid">
+                    <div class="main_events_pic go_big"><img src="img/events_5.png"></div>
+                    <div class="title_mid font_bold">HR мероприятия</div>
+                    Открытые двери, ярмарки вакансий, виртуальные тимбилдинги и&nbsp;корпоративные праздники для&nbsp;распределенных команд.
+                </div>
+                <div class="cle"></div>
+            </div>
+            <div class="big_center_but_case">
+                <a href="#order" rel="order" class="big_center_but font_bold menu_move_to">Запросить демо</a>
+            </div>
+        </div>
+    </div>
+    <div class="main_block">
+        <div class="main_block_inside">
+			
+			<!--
+            <div class="title_superbig_center font_bold">
+                Посетите ближайшие мероприятия на&nbsp;Beams
+            </div>
+            <div class="capa_block">
+                <div class="capa_text font_mid">
+                    <div class="title_mid font_bold">Compot 2021</div>
+                    IV ежегодный международный конвент по&nbsp;комьюнити-менеджменту.
+                    <div class="capa_date font_bold"><span class="capa_date_in">11–12 ноября 2021</span><a href="https://compotconvent.ru/" target="_blank">Подробнее &rang;</a></div>
+                </div>
+                <div class="capa_pic">
+                    <div class="capa_pic_inside" style="background-image: url(img/events/compot_logo.png);"></div>
+                    <div class="capa_pic_full" style="background-image: url(img/events/compot_bg.jpg);"></div>
+                </div>
+            </div>
+			<div class="capa_block">
+                <div class="capa_text go_revert font_mid">
+                    <div class="title_mid font_bold">MY.TECH 2021</div>
+                    Технологический фестиваль MY.TECH в&nbsp;гибридном формате. Открытая демонстрация новых технологий, профессиональные дискуссии о&nbsp;будущем, презентации и&nbsp;конкурсы высокотехнологичных проектов, образовательные и&nbsp;развлекательные программы.
+                    <div class="capa_date font_bold"><span class="capa_date_in">10 декабря 2021</span><a href="http://fest-my.tech/" target="_blank">Подробнее &rang;</a></div>
+                </div>
+                <div class="capa_pic go_revert">
+					<div class="capa_pic_inside" style="background-image: url(img/events/mytech_logo.png);"></div>
+                    <div class="capa_pic_full" style="background-image: url(img/events/mytech_bg.jpg);"></div>
+                </div>
+            </div>
+			-->
+
+            <div class="title_superbig_center font_bold" id="cases">
+                Вдохновитесь успехами наших клиентов
+            </div>
+            <div class="main_events_block">
+                <div class="main_events_case go_light_bg font_mid">
+                    <div class="main_events_pic go_big"><img src="img/logos/dreamers.png"></div>
+                    <div class="title_mid font_bold">Мечтатели</div>
+                    Первый онлайн-форум Мечтателей на 187&nbsp;000 зрителей. Два&nbsp;потока, выставки, нетворкинг. Спикеры: Яндекс, igooods, Qmarketing, ВКонтакте, Coddy, iFarm и&nbsp;другие.
+                </div>
+                <div class="main_events_case go_light_bg font_mid">
+                    <div class="main_events_pic go_big"><img src="img/logos/adv.png"></div>
+                    <div class="title_mid font_bold">День Интернет Рекламы</div>
+                    Первая онлайн-конференция &laquo;День Интернет Рекламы&raquo; со&nbsp;спикерами из&nbsp;крупнейших компаний: Яндекс, Google, ВКонтакте, Тинькофф, Huawei Ads, TikTok.
+                </div>
+                <div class="main_events_case go_light_bg font_mid">
+                    <div class="main_events_pic go_big"><img src="img/logos/foodtech.png"></div>
+                    <div class="title_mid font_bold">Foodtech</div>
+                    Антикризисная онлайн-конференция Foodtech с&nbsp;участием лидеров рынка: Delivery Club, Яндекс.Еда, Greenbox, Банк Санкт-Петербург, Perelman People, РЕАЛ.
+                </div>
+                <div class="main_events_case go_light_bg font_mid">
+                    <div class="main_events_pic go_big"><img src="img/logos/btmice.png"></div>
+                    <div class="title_mid font_bold">International Business Travel&nbsp;Forum</div>
+                    Первый международный гибридный форум о&nbsp;MICE на&nbsp;двух языках с&nbsp;выставкой на 50+&nbsp;экспонетов: Marriott, Accor, OneTwoTrip, Movenpick, Azimut и&nbsp;другие.
+                </div>
+                <div class="main_events_case go_light_bg font_mid">
+                    <div class="main_events_pic go_big"><img src="img/logos/sarafan.png"></div>
+                    <div class="title_mid font_bold">Сарафан</div>
+                    Первая пижамная онлайн-вечеринка Сарафана с&nbsp;серьёзными разговорами про&nbsp;аналитику и&nbsp;бизнес. Спикеры: ГК&nbsp;«Калашников», Vodafone, Райффайзенбанк, Familia.
+                </div>
+                <div class="main_events_case go_light_bg font_mid">
+                    <div class="main_events_pic go_big"><img src="img/logos/compot.png"></div>
+                    <div class="title_mid font_bold">Compot</div>
+                    Крупнейший онлайн-форум о&nbsp;сообществах в&nbsp;мире. 3&nbsp;200 участников. Среди спикеров: Google, Яндекс, Сбербанк, Facebook, Microsoft, Nike.
+                </div>
+                <div class="cle"></div>
+            </div>
+            <div class="review_block">
+                <div class="review_ico"><img src="img/review_ico.svg"></div>
+                <div class="title_review">
+                    Совет тем, кто тоже хочет организовать свое мероприятие на Beams: &laquo;У&nbsp;ребят есть все предпосылки для&nbsp;того, чтобы стать лидерами на&nbsp;рынке онлайн-платформ, а&nbsp;вы&nbsp;можете поучаствовать в&nbsp;их&nbsp;становлении. Если вам нужна онлайн-платформа, то&nbsp;без&nbsp;сомнения передавайте эту задачу Beams. Вы&nbsp;будете приятно удивлены.&raquo;
+                </div>
+                <div class="review_photo"><img src="img/alex_compot.png"></div>
+                <div class="review_name font_bold">Александр Блавацкий</div>
+                <div class="review_pos">Руководитель проекта Compot</div>
+            </div>
+        </div>
+    </div>
+	
+    <div class="main_block go_bg" id="order">
+        <div class="main_block_inside">
+            <div class="title_superbig_center font_bold">
+                Оцените все&nbsp;преимущества Beams
+            </div>
+            
+			
+			<div class="price_big_block">
+                
+                <div class="price_big_halfcase">
+                    <div class="main_events_pic go_big"><img src="img/beams_price.png"></div>
+                    <div class="title_mid font_bold">Beams 2.S</div>
+                    <div class="price_halfcase_text font_mid">
+                        Все компонтенты и&nbsp;библиотеки Beams без&nbsp;ограничений. Индивидуальный подход по&nbsp;настройке и&nbsp;оформлению платформы. Наполнение контентом и&nbsp;техническая поддержка.
+                    </div>
+                    
+                    <div class="price_halfcase_lineoption">
+                        Количество событий
+                        <div class="price_halfcase_lineoption_yn">От 1 до &#8734;</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="img/price_events.png"></div>
+                    </div>
+                    <div class="price_halfcase_lineoption">
+                        Количество участников
+                        <div class="price_halfcase_lineoption_yn">От 1000 до &#8734;</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="img/price_smile.png"></div>
+                    </div>
+					<div class="price_halfcase_lineoption">
+                        Срок запуска
+                        <div class="price_halfcase_lineoption_yn">От 3 рабочих дней</div>
+                        <div class="price_halfcase_lineoption_yn_ico"><img src="img/price_time.png"></div>
+                    </div>
+                    <div class="price_halfcase_num inprice font_bold">от 49 900 р.</div>
+                </div>
+				
+				<div class="price_big_halfcase">
+                    <div class="main_events_pic go_big"><img src="img/beams_demo_price.png"></div>
+                    <div class="title_mid font_bold">Запросить демо</div>
+
+					<script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"896155",hash:"52daf8638b243ea5d2b508a704c9db5f",locale:"ru"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");</script><script id="amoforms_script_896155" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1644224675"></script>
+					
+					<div class="feedback_policy">Нажимая кнопку &laquo;Отправить&raquo; вы&nbsp;соглашаетесь<br>с&nbsp;<a href="../docs/policy.pdf" target="_blank">обработкой</a> персональных данных.</div>
+					
+                </div>
+
+                <div class="cle"></div>
+            </div>
+        </div>
+    </div>
+	
+	
+	
+    <div class="main_block go_footer">
+        <div class="main_block_inside">
+            <div class="title_superbig_center font_bold">
+                Остались вопросы?
+            </div>
+            <a href="mailto:hello@beams.pro" class="super_big_email font_bold">hello@beams.pro</a>
+            <a href="beams.pdf" target="_blank" class="download_pdf font_bold">Скачать презентацию .pdf</a>
+			
+            <a href="https://sk.ru/" target="_blank" class="footer_logo"><img src="img/footer_sk_logo.svg"></a>
+        </div>
+    </div>
+    
+
+</body>
+</html>
