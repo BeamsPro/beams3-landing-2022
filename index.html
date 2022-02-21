@@ -6,54 +6,53 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Beams | All-in-one платформа для онлайн мероприятий</title>
 	<meta name="Author" CONTENT="Beams">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta name="keywords" content="">
 	<meta name="description" content="Вовлекайте. Управляйте. Достигайте целей.">
-    <link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="adaptive.css">
-    
-    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, minimal-ui"/>
-    
-    <meta property="og:title" content="Beams">
-    <meta property="og:description" content="Вовлекайте. Управляйте. Достигайте целей.">
-    <meta property="og:site_name" content="Beams">
-    <meta property="og:url" content="https://beams.pro/">
-    <meta property="og:image" content="beams.png">
 
-	<script src="menu.js"></script>
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, minimal-ui" />
 
+	<meta property="og:title" content="Beams">
+	<meta property="og:description" content="Вовлекайте. Управляйте. Достигайте целей.">
+	<meta property="og:site_name" content="Beams">
+	<meta property="og:url" content="https://beams.pro/">
+	<meta property="og:image" content="beams.png">
 </head>
 
 <body>
-	
+
 	<div class="goglobal_block" id="goglobal_block">
 		<div onclick="goglobal_close();" class="goglobal_close"><img src="img/close_but.svg"></div>
 		<div class="goglobal_title font_bold">Выбор языка:</div>
 		<a href="../" class="goglobal_a font_bold">English</a>
 		<div class="goglobal_a font_bold go_active">Russian</div>
 	</div>
-	
+
 	<!-- *** -->
-	
+
 	<div class="admenu_block" id="admenu">
 		<div class="admenu_block_menu go_active">Новый Beams 3.0</div>
 		<a href="2s/" class="admenu_block_menu">Beams 2.S</a>
 		<a href="connect/" class="admenu_but font_bold">Запросить demo</a>
 	</div>
-	
+
 	<!-- *** -->
-	
-	<div class="cookie_case" id="cookies_block">
+
+	<div class="cookie_case" id="cookies_block" style="display: none;">
 		<div class="cookie_ico"><img src="img/icons/cookie.png"></div>
-		Оставаясь на нашем сайте, вы соглашаетесь с использованием файлов cookie. Подробности читайте в <a href="policy/" target="_blank">политике</a> конфиденциальности.
+		Оставаясь на нашем сайте, вы соглашаетесь с использованием файлов cookie. Подробности читайте в <a
+			href="/policy" target="_blank">политике</a> конфиденциальности.
 		<div class="cookie_buts">
-			<div class="cookie_but font_bold" onclick="cookiesfiles();">Хорошо</div>
+			<div class="cookie_but font_bold" id="cookies_yes" onclick="cookiesYes();">Принять</div>
+			<div class="cookie_but font_bold" id="cookies_no" onclick="cookiesNo();">Отклонить</div>
 			<div class="cle"></div>
 		</div>
 	</div>
-	
+
 	<!-- *** -->
-	
+
 	<div class="top_bar">
 		<div class="top_logo"><img src="img/logo.svg"></div>
 		<div class="top_bar_line"></div>
@@ -66,15 +65,15 @@
 		<div class="top_global" onclick="goglobal_open();"><img src="img/global.svg"></div>
 		<div class="cle"></div>
 	</div>
-	
+
 	<div class="main_content">
-		
+
 		<div class="main_stage content_inside">
 			<div class="big_title font_bold">
 				All-in-one решение
 				<span class="brbr"><br></span>
 				для онлайн мероприятий
-			</div>			
+			</div>
 			<div class="big_subtitle">
 				Вовлекайте. Управляйте. Достигайте целей.
 			</div>
@@ -132,7 +131,7 @@
 				<div class="main_pic_connect"><img src="img/main_connect.png"></div>
 			</div>
 		</div>
-		
+
 		<div class="content_block go_clients">
 			<div class="content_inside">
 				<div class="clients_title">Среди клиентов Beams:</div>
@@ -145,7 +144,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="content_block go_dark">
 			<div class="content_inside">
 				<div class="block_title font_white font_bold">
@@ -209,7 +208,7 @@
 			</div>
 			-->
 		</div>
-		
+
 		<!--
 		<div class="content_block go_light">
 			<div class="content_inside">
@@ -244,7 +243,7 @@
 			</div>
 		</div>
 		-->
-		
+
 		<div class="content_block go_light">
 			<div class="content_inside">
 				<div class="block_title font_bold">
@@ -253,10 +252,12 @@
 					Просто сравните:
 				</div>
 				<div class="block_title_submenu">
-					<a href="" class="block_title_submenu_a go_active">Мероприятие&nbsp;на&nbsp;Beams</a>
-					<a href="" class="block_title_submenu_a">Обычная&nbsp;онлайн&nbsp;конференция</a>
+					<a href="#" class="block_title_submenu_a go_active" rel="switch" data-id="case_1"
+						data-scope="scope_1">Мероприятие&nbsp;на&nbsp;Beams</a>
+					<a href="#" class="block_title_submenu_a" rel="switch" data-id="case_2"
+						data-scope="scope_1">Обычная&nbsp;онлайн&nbsp;конференция</a>
 				</div>
-				<div>
+				<div class="case_list" id="case_1">
 					<div class="case_one go_cause">
 						<div class="case_one_title font_bold">Просто вовлекать</div>
 						<div class="case_one_text">
@@ -286,6 +287,32 @@
 					</div>
 					<div class="cle"></div>
 				</div>
+
+				<div class="case_list" id="case_2" style="display: none;">
+					<div class="case_one go_cause">
+						<div class="case_one_title font_bold">Easy to engage</div>
+						<div class="case_one_text">
+							Экономия времени и денег.
+						</div>
+						<div class="case_cause_pic"></div>
+					</div>
+					<div class="case_one go_cause">
+						<div class="case_one_title font_bold">Easy to coordinate</div>
+						<div class="case_one_text">
+							Уникальное оформление и структура, о вашем мероприятии будут говорить — больше
+							возвращаемость.
+						</div>
+						<div class="case_cause_pic"></div>
+					</div>
+					<div class="case_one go_cause">
+						<div class="case_one_title font_bold">Easy to benefit</div>
+						<div class="case_one_text">
+							Увеличение метрик, больше продаж.
+						</div>
+						<div class="case_cause_pic"></div>
+					</div>
+					<div class="cle"></div>
+				</div>
 				<a href="connect/" class="main_but go_center_white font_bold">Запросить demo</a>
 				<!--
 				<div class="oppo_case">
@@ -307,7 +334,7 @@
 				-->
 			</div>
 		</div>
-		
+
 		<div class="content_block">
 			<div class="content_inside">
 				<div class="block_title font_bold">
@@ -316,16 +343,107 @@
 					онлайн мероприйтий в&nbsp;вашем распоряжении:
 				</div>
 				<div class="block_title_submenu">
-					<a href="" class="block_title_submenu_a go_active">Трансляции</a>
-					<a href="" class="block_title_submenu_a">Сессии</a>
-					<a href="" class="block_title_submenu_a">Нетворкинг</a>
-					<a href="" class="block_title_submenu_a">Выставки</a>
-					<a href="" class="block_title_submenu_a">Интерактивы</a>
-					<a href="" class="block_title_submenu_a">Другое</a>
+					<a href="" class="block_title_submenu_a go_active" rel="switch" data-id="component_1"
+						data-scope="components">Трансляции</a>
+					<a href="" class="block_title_submenu_a" rel="switch" data-id="component_2"
+						data-scope="components">Сессии</a>
+					<a href="" class="block_title_submenu_a" rel="switch" data-id="component_3"
+						data-scope="components">Нетворкинг</a>
+					<a href="" class="block_title_submenu_a" rel="switch" data-id="component_4"
+						data-scope="components">Выставки</a>
+					<a href="" class="block_title_submenu_a" rel="switch" data-id="component_5"
+						data-scope="components">Интерактивы</a>
+					<a href="" class="block_title_submenu_a" rel="switch" data-id="component_6"
+						data-scope="components">Другое</a>
 				</div>
-				<div class="oppo_case">
+				<div class="oppo_case" id="component_1">
 					<div class="oppo_case_pic">
-						
+
+					</div>
+					<div class="oppo_case_desc">
+						<div class="oppo_icons">
+							<div class="oppo_ico"><img src="img/icons/stream.png"></div>
+							<div class="cle"></div>
+						</div>
+						<div class="case_one_title font_bold">Live-трансляции, в&nbsp;которых хочеться участвовать</div>
+						<div class="case_one_text">
+							Высокое качество, возможность выйти в эфир, задать вопрос и так далее.
+						</div>
+					</div>
+					<div class="cle"></div>
+				</div>
+
+				<div class="oppo_case" id="component_2" style="display: none;">
+					<div class="oppo_case_pic">
+
+					</div>
+					<div class="oppo_case_desc">
+						<div class="oppo_icons">
+							<div class="oppo_ico"><img src="img/icons/stream.png"></div>
+							<div class="cle"></div>
+						</div>
+						<div class="case_one_title font_bold">Live-трансляции, в&nbsp;которых хочеться участвовать</div>
+						<div class="case_one_text">
+							Высокое качество, возможность выйти в эфир, задать вопрос и так далее.
+						</div>
+					</div>
+					<div class="cle"></div>
+				</div>
+
+				<div class="oppo_case" id="component_3" style="display: none;">
+					<div class="oppo_case_pic">
+
+					</div>
+					<div class="oppo_case_desc">
+						<div class="oppo_icons">
+							<div class="oppo_ico"><img src="img/icons/stream.png"></div>
+							<div class="cle"></div>
+						</div>
+						<div class="case_one_title font_bold">Live-трансляции, в&nbsp;которых хочеться участвовать</div>
+						<div class="case_one_text">
+							Высокое качество, возможность выйти в эфир, задать вопрос и так далее.
+						</div>
+					</div>
+					<div class="cle"></div>
+				</div>
+
+				<div class="oppo_case" id="component_4" style="display: none;">
+					<div class="oppo_case_pic">
+
+					</div>
+					<div class="oppo_case_desc">
+						<div class="oppo_icons">
+							<div class="oppo_ico"><img src="img/icons/stream.png"></div>
+							<div class="cle"></div>
+						</div>
+						<div class="case_one_title font_bold">Live-трансляции, в&nbsp;которых хочеться участвовать</div>
+						<div class="case_one_text">
+							Высокое качество, возможность выйти в эфир, задать вопрос и так далее.
+						</div>
+					</div>
+					<div class="cle"></div>
+				</div>
+
+				<div class="oppo_case" id="component_5" style="display: none;">
+					<div class="oppo_case_pic">
+
+					</div>
+					<div class="oppo_case_desc">
+						<div class="oppo_icons">
+							<div class="oppo_ico"><img src="img/icons/stream.png"></div>
+							<div class="cle"></div>
+						</div>
+						<div class="case_one_title font_bold">Live-трансляции, в&nbsp;которых хочеться участвовать</div>
+						<div class="case_one_text">
+							Высокое качество, возможность выйти в эфир, задать вопрос и так далее.
+						</div>
+					</div>
+					<div class="cle"></div>
+				</div>
+
+				<div class="oppo_case" id="component_6" style="display: none;">
+					<div class="oppo_case_pic">
+
 					</div>
 					<div class="oppo_case_desc">
 						<div class="oppo_icons">
@@ -341,7 +459,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="content_block go_light">
 			<div class="content_inside">
 				<div class="block_title font_bold">
@@ -350,12 +468,15 @@
 					или выбрать готовый для быстрого старта:
 				</div>
 				<div class="block_title_submenu">
-					<a href="" class="block_title_submenu_a go_active">Все&nbsp;сценарии</a>
-					<a href="" class="block_title_submenu_a">Для&nbsp;бизнеса</a>
-					<a href="" class="block_title_submenu_a">Для&nbsp;образования</a>
+					<a href="#" class="block_title_submenu_a go_active" rel="filter" data-scope="types"
+						data-filter="">Все&nbsp;сценарии</a>
+					<a href="#" class="block_title_submenu_a" rel="filter" data-scope="types"
+						data-filter="bus">Для&nbsp;бизнеса</a>
+					<a href="#" class="block_title_submenu_a" rel="filter" data-scope="types"
+						data-filter="edu">Для&nbsp;образования</a>
 				</div>
-				<div>
-					<div class="case_one">
+				<div class="case_list">
+					<div class="case_one" rel="filtered" data-scope="types" data-filter="edu">
 						<div class="case_one_hover">
 							<div class="case_one_uptitle go_white font_bold">Бизнес</div>
 							<div class="case_one_title font_bold">Конференция</div>
@@ -375,7 +496,7 @@
 							<div class="cle"></div>
 						</div>
 					</div>
-					<div class="case_one">
+					<div class="case_one" rel="filtered" data-scope="types" data-filter="bus">
 						<div class="case_one_uptitle font_bold">Образование</div>
 						<div class="case_one_title font_bold">Семинар</div>
 						<div class="case_one_text">
@@ -389,7 +510,7 @@
 							<div class="cle"></div>
 						</div>
 					</div>
-					<div class="case_one">
+					<div class="case_one" rel="filtered" data-scope="types" data-filter="edu,bus">
 						<div class="case_one_uptitle font_bold">Образование</div>
 						<div class="case_one_title font_bold">Воркшоп</div>
 						<div class="case_one_text">
@@ -402,7 +523,7 @@
 							<div class="cle"></div>
 						</div>
 					</div>
-					<div class="case_one">
+					<div class="case_one" rel="filtered" data-scope="types" data-filter="bus">
 						<div class="case_one_uptitle font_bold">Образование</div>
 						<div class="case_one_title font_bold">Воркшоп</div>
 						<div class="case_one_text">
@@ -415,7 +536,7 @@
 							<div class="cle"></div>
 						</div>
 					</div>
-					<div class="case_one">
+					<div class="case_one" rel="filtered" data-scope="types" data-filter="edu">
 						<div class="case_one_uptitle font_bold">Образование</div>
 						<div class="case_one_title font_bold">Воркшоп</div>
 						<div class="case_one_text">
@@ -428,7 +549,7 @@
 							<div class="cle"></div>
 						</div>
 					</div>
-					<div class="case_one">
+					<div class="case_one" rel="filtered" data-scope="types" data-filter="edu,bus">
 						<div class="case_one_uptitle font_bold">Образование</div>
 						<div class="case_one_title font_bold">Воркшоп</div>
 						<div class="case_one_text">
@@ -441,7 +562,7 @@
 							<div class="cle"></div>
 						</div>
 					</div>
-					<div class="case_one">
+					<div class="case_one" rel="filtered" data-scope="types" data-filter="edu">
 						<div class="case_one_uptitle font_bold">Образование</div>
 						<div class="case_one_title font_bold">Воркшоп</div>
 						<div class="case_one_text">
@@ -454,7 +575,7 @@
 							<div class="cle"></div>
 						</div>
 					</div>
-					<div class="case_one">
+					<div class="case_one" rel="filtered" data-scope="types" data-filter="bus">
 						<div class="case_one_uptitle font_bold">Образование</div>
 						<div class="case_one_title font_bold">Воркшоп</div>
 						<div class="case_one_text">
@@ -467,17 +588,17 @@
 							<div class="cle"></div>
 						</div>
 					</div>
-					<div class="case_one">
+					<div class="case_one" rel="filtered" data-scope="types" data-filter="edu">
 						<div class="case_one_uptitle font_bold">Бизнес и образование</div>
-						<div class="case_one_title font_bold">И еще более 100 сценариев для любого типа мероприятий</div>
+						<div class="case_one_title font_bold">И еще более 100 сценариев для любого типа мероприятий
+						</div>
 						<a href="connect/" class="case_one_big_but font_bold">Посмотреть все сценарии</a>
 					</div>
-					<div class="cle"></div>
 				</div>
 				<a href="connect/" class="main_but go_center font_bold">Создать событие</a>
 			</div>
 		</div>
-		
+
 		<div class="content_block">
 			<div class="content_inside">
 				<div class="block_title font_bold">
@@ -499,7 +620,7 @@
 					<a href="" class="block_title_submenu_a">Аналитика</a>
 				</div>
 				-->
-				<div>
+				<div class="case_list">
 					<div class="case_one go_cause go_light">
 						<div class="case_one_title font_bold">Привлечение аудитории</div>
 						<div class="case_one_text">
@@ -510,7 +631,8 @@
 					<div class="case_one go_cause go_light">
 						<div class="case_one_title font_bold">Рассылки и&nbsp;уведомления</div>
 						<div class="case_one_text">
-							Уникальное оформление и структура, о вашем мероприятии будут говорить — больше возвращаемость.
+							Уникальное оформление и структура, о вашем мероприятии будут говорить — больше
+							возвращаемость.
 						</div>
 						<div class="case_cause_pic"></div>
 					</div>
@@ -522,7 +644,7 @@
 						<div class="case_cause_pic"></div>
 					</div>
 					<div class="case_one go_cause go_light">
-						<div class="case_one_title font_bold">Интеграции</div>
+						<div class="case_one_title font_bold">Вовлечение участников</div>
 						<div class="case_one_text">
 							Экономия времени и денег.
 						</div>
@@ -531,7 +653,8 @@
 					<div class="case_one go_cause go_light">
 						<div class="case_one_title font_bold">Сбор обратной связи</div>
 						<div class="case_one_text">
-							Уникальное оформление и структура, о вашем мероприятии будут говорить — больше возвращаемость.
+							Уникальное оформление и структура, о вашем мероприятии будут говорить — больше
+							возвращаемость.
 						</div>
 						<div class="case_cause_pic"></div>
 					</div>
@@ -564,7 +687,7 @@
 				-->
 			</div>
 		</div>
-		
+
 		<div class="content_block go_dark">
 			<div class="content_inside">
 				<div class="block_title font_white font_bold">
@@ -573,15 +696,88 @@
 					Посмотрите примеры:
 				</div>
 				<div class="block_title_submenu">
-					<a href="" class="block_title_submenu_a go_white_active">Fors&nbsp;Oracle</a>
-					<a href="" class="block_title_submenu_a go_white">SelfMama&nbsp;Forum</a>
-					<a href="" class="block_title_submenu_a go_white">Dreamers&nbsp;Forum</a>
-					<a href="" class="block_title_submenu_a go_white">Rens</a>
-					<a href="" class="block_title_submenu_a go_white">AXOFT&nbsp;Kaspersky</a>
+					<a href="" class="block_title_submenu_a go_white go_active" rel="switch" data-id="conf_1"
+						data-scope="conf">Fors&nbsp;Oracle</a>
+					<a href="" class="block_title_submenu_a go_white" rel="switch" data-id="conf_2"
+						data-scope="conf">SelfMama&nbsp;Forum</a>
+					<a href="" class="block_title_submenu_a go_white" rel="switch" data-id="conf_3"
+						data-scope="conf">Dreamers&nbsp;Forum</a>
+					<a href="" class="block_title_submenu_a go_white" rel="switch" data-id="conf_4"
+						data-scope="conf">Rens</a>
+					<a href="" class="block_title_submenu_a go_white" rel="switch" data-id="conf_5"
+						data-scope="conf">AXOFT&nbsp;Kaspersky</a>
 				</div>
-				<div class="oppo_case font_white">
+				<div class="oppo_case font_white" id="conf_1">
 					<div class="oppo_case_pic">
-					
+
+					</div>
+					<div class="oppo_case_desc">
+						<div class="oppo_icons">
+							<div class="oppo_ico go_logo"><img src="img/clients/oracle.png"></div>
+							<div class="cle"></div>
+						</div>
+						<div class="case_one_title font_bold">Fors Oracle</div>
+						<div class="case_one_text">
+							Лендинги, рассылки.
+						</div>
+					</div>
+					<div class="cle"></div>
+				</div>
+
+				<div class="oppo_case font_white" id="conf_2" style="display: none;">
+					<div class="oppo_case_pic">
+
+					</div>
+					<div class="oppo_case_desc">
+						<div class="oppo_icons">
+							<div class="oppo_ico go_logo"><img src="img/clients/oracle.png"></div>
+							<div class="cle"></div>
+						</div>
+						<div class="case_one_title font_bold">Fors Oracle</div>
+						<div class="case_one_text">
+							Лендинги, рассылки.
+						</div>
+					</div>
+					<div class="cle"></div>
+				</div>
+
+				<div class="oppo_case font_white" id="conf_3" style="display: none;">
+					<div class="oppo_case_pic">
+
+					</div>
+					<div class="oppo_case_desc">
+						<div class="oppo_icons">
+							<div class="oppo_ico go_logo"><img src="img/clients/oracle.png"></div>
+							<div class="cle"></div>
+						</div>
+						<div class="case_one_title font_bold">Fors Oracle</div>
+						<div class="case_one_text">
+							Лендинги, рассылки.
+						</div>
+					</div>
+					<div class="cle"></div>
+				</div>
+
+				<div class="oppo_case font_white" id="conf_4" style="display: none;">
+					<div class="oppo_case_pic">
+
+					</div>
+					<div class="oppo_case_desc">
+						<div class="oppo_icons">
+							<div class="oppo_ico go_logo"><img src="img/clients/oracle.png"></div>
+							<div class="cle"></div>
+						</div>
+						<div class="case_one_title font_bold">Fors Oracle</div>
+						<div class="case_one_text">
+							Лендинги, рассылки.
+						</div>
+					</div>
+					<div class="cle"></div>
+				</div>
+
+				<div class="oppo_case font_white" id="conf_5" style="display: none;">
+					<div class="oppo_case_pic">
+
 					</div>
 					<div class="oppo_case_desc">
 						<div class="oppo_icons">
@@ -597,12 +793,13 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="content_block_reviews">
 			<div class="content_inside">
 				<div class="review_case">
 					<div class="case_one_uptitle font_bold">Отзывы клиентов</div>
-					<div class="font_bold">Спасибо вам огромное! Вы волшебники! Не знаю как работает ваша магия, но это чудесно! Вы крутые)</div>
+					<div class="font_bold">Спасибо вам огромное! Вы волшебники! Не знаю как работает ваша магия, но это
+						чудесно! Вы крутые)</div>
 					<div class="review_case_who">Pfizer</div>
 					<!--<div class="review_case_who_logo"><img src="img/clients/pfizer.png"></div>-->
 					<div class="review_case_pad">
@@ -616,7 +813,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!--
 		<div class="content_block">
 			<div class="content_inside">
@@ -650,7 +847,7 @@
 			</div>
 		</div>
 		-->
-		
+
 		<div class="content_block go_light">
 			<div class="content_inside">
 				<div class="block_title font_bold">
@@ -658,7 +855,7 @@
 					<span class="brbr"><br></span>
 					Мы&nbsp;гарантируем.
 				</div>
-				<div>
+				<div class="case_list">
 					<div class="case_one go_big_dark">
 						<div class="case_one_title font_bold">Безопасность</div>
 						<div class="case_one_text">
@@ -685,22 +882,28 @@
 				<a href="connect/" class="main_but go_center font_bold">Запросить demo</a>
 			</div>
 		</div>
-		
+
 		<div class="content_block">
 			<div class="content_inside">
 				<div class="block_title font_bold">
 					Часто задаваемые вопросы:
 				</div>
-				<div class="que_block">
-					<div class="que_block_open_but"><img src="img/str_open_ico.svg"></div>
+				<div class="que_block" rel="faq">
+					<div class="que_block_open_but" rel="faq_1"><img src="img/str_open_ico.svg"></div>
 					<div class="que_block_title font_bold">Сколько стоит провести мероприятие на Beams?</div>
+					<div class="que_text">
+						Где слон мы не знаем. Но знаем, что мероприятия на Beams офигенны=)))
+					</div>
 				</div>
-				<div class="que_block">
+				<div class="que_block" rel="faq">
 					<div class="que_block_open_but"><img src="img/str_open_ico.svg"></div>
 					<div class="que_block_title font_bold">Какие есть возможности по маркетингу?</div>
+					<div class="que_text">
+						Где слон мы не знаем. Но знаем, что мероприятия на Beams офигенны=)))
+					</div>
 				</div>
-				<div class="que_block">
-					<div class="que_block_open_but"><img src="img/str_close_ico.svg"></div>
+				<div class="que_block" rel="faq">
+					<div class="que_block_open_but"><img src="img/str_open_ico.svg"></div>
 					<div class="que_block_title font_bold">Где слон?</div>
 					<div class="que_text">
 						Где слон мы не знаем. Но знаем, что мероприятия на Beams офигенны=)))
@@ -708,13 +911,14 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="block_cta">
 			<div class="content_inside">
 				<div class="big_title font_bold">
 					Ваше лучшее онлайн мероприятие на&nbsp;Beams
 					<span class="brbr"><br></span>
-					начинается здесь</div>			
+					начинается здесь
+				</div>
 				<div class="big_subtitle">
 					Попробуйте сейчас. Это&nbsp;просто.
 				</div>
@@ -723,11 +927,11 @@
 					<a href="connect/" class="main_but go_price font_bold">Узнать цены</a>
 				</div>
 				<div class="main_buts_text">
-					Оставьте заявку на консультацию.
+					Получите ранний доступ Beams, чтобы оценить всего его преимущества.
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="footer">
 			<div class="footer_socials">
 				<a href="#" class="footer_social"><img src="img/soc_fb.svg"></a>
@@ -736,15 +940,20 @@
 				<a href="#" class="footer_social"><img src="img/soc_tw.svg"></a>
 				<div class="cle"></div>
 			</div>
-			<a href="policy/" target="_blank" class="footer_policy">Политика конфиденциальности</a>
+			<a href="/policy" class="footer_policy">Политика конфиденциальности</a>
 			<div class="footer_sk"><img src="img/sk.svg"></div>
 			<div class="cle"></div>
 		</div>
-		
+
 	</div>
-    
-	
+
+
 	<div class="fixed_bg"></div>
 
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.cookies.js"></script>
+
+	<script src="js/script.js"></script>
 </body>
+
 </html>
