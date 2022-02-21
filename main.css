@@ -332,10 +332,6 @@ img{
 	margin-right: 50px;
 }
 
-.profit_case:nth-child(3n){
-	margin-right: 0;
-}
-
 .profit_case_ico{
 	display: block;
 	position: absolute;
@@ -718,7 +714,6 @@ img{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-column-gap: 50px;
-	
 }
 
 .case_one{
