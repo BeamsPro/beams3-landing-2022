@@ -311,6 +311,9 @@ img{
 }
 
 .profits_block{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 30px;
 	width: 100%;
 	margin-bottom: 60px;
 }
@@ -329,7 +332,6 @@ img{
 	font-size: 16px;
 	line-height: 24px;
 	background-color: #2E2E6D;
-	margin-right: 50px;
 }
 
 .profit_case_ico{
@@ -713,7 +715,7 @@ img{
 .case_list {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 50px;
+	column-gap: 50px;
 }
 
 .case_one{
