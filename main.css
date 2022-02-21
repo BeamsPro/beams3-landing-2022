@@ -521,15 +521,26 @@ img{
 }
 
 .review_case_icos{
-	float: right;
+	display: inline-block;
 	width: 40px;
 	height: 40px;
+
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.review_case_icos:hover {
+	transform: scale(0.8);
 }
 
 .review_case_icos img{
 	display: block;
 	width: 40px;
 	height: auto;
+}
+
+.review_case_icopads {
+	display: inline-block;
 }
 
 .review_case_icopad{
@@ -898,15 +909,17 @@ img{
 	height: 80px;
 	overflow: hidden;
 	margin-bottom: 40px;
+	
 }
 
 .fichers_line_inside{
-	width: 5000px;
+	position: relative;
+	white-space: nowrap;
 }
 
 .fichers_block{
 	position: relative;
-	float: left;
+	display: inline-block;
 	width: 340px;
 	height: 80px;
 	padding-left: 90px;

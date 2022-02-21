@@ -152,7 +152,7 @@
 				</div>
 			</div>
 			<div class="fichers_line">
-				<div class="fichers_line_inside">
+				<div class="fichers_line_inside" id="line_to_left" style="margin-left: -400px;">
 					<div class="fichers_block">
 						<div class="fichers_block_ico"><img src="img/icons/stream.png"></div>
 						<div class="fichers_block_title font_bold">Конференции</div>
@@ -173,11 +173,30 @@
 						<div class="fichers_block_title font_bold">Презентации</div>
 						<div class="fichers_block_subtitle">100+ участников</div>
 					</div>
-					<div class="cle"></div>
+					<div class="fichers_block">
+						<div class="fichers_block_ico"><img src="img/icons/stream.png"></div>
+						<div class="fichers_block_title font_bold">Конференции</div>
+						<div class="fichers_block_subtitle">1000+ участников</div>
+					</div>
+					<div class="fichers_block">
+						<div class="fichers_block_ico"><img src="img/icons/stream.png"></div>
+						<div class="fichers_block_title font_bold">Воркшопы</div>
+						<div class="fichers_block_subtitle">Группы, доски</div>
+					</div>
+					<div class="fichers_block">
+						<div class="fichers_block_ico"><img src="img/icons/fire.png"></div>
+						<div class="fichers_block_title font_bold">Хакатоны</div>
+						<div class="fichers_block_subtitle">100+ участников</div>
+					</div>
+					<div class="fichers_block">
+						<div class="fichers_block_ico"><img src="img/icons/stream.png"></div>
+						<div class="fichers_block_title font_bold">Презентации</div>
+						<div class="fichers_block_subtitle">100+ участников</div>
+					</div>
 				</div>
 			</div>
 			<div class="fichers_line">
-				<div class="fichers_line_inside" style="margin-left: -100px;">
+				<div class="fichers_line_inside" style="margin-left: -600px;" id="line_to_right">
 					<div class="fichers_block">
 						<div class="fichers_block_ico"><img src="img/icons/stream.png"></div>
 						<div class="fichers_block_title font_bold">Дебаты</div>
@@ -198,7 +217,26 @@
 						<div class="fichers_block_title font_bold">Страт.сессии</div>
 						<div class="fichers_block_subtitle">100+ участников</div>
 					</div>
-					<div class="cle"></div>
+					<div class="fichers_block">
+						<div class="fichers_block_ico"><img src="img/icons/stream.png"></div>
+						<div class="fichers_block_title font_bold">Дебаты</div>
+						<div class="fichers_block_subtitle">100+ участников</div>
+					</div>
+					<div class="fichers_block">
+						<div class="fichers_block_ico"><img src="img/icons/stream.png"></div>
+						<div class="fichers_block_title font_bold">Круглые столы</div>
+						<div class="fichers_block_subtitle">100+ участниковв</div>
+					</div>
+					<div class="fichers_block">
+						<div class="fichers_block_ico"><img src="img/icons/qr.png"></div>
+						<div class="fichers_block_title font_bold">Мозговые штурмы</div>
+						<div class="fichers_block_subtitle">100+ участников</div>
+					</div>
+					<div class="fichers_block">
+						<div class="fichers_block_ico"><img src="img/icons/stream.png"></div>
+						<div class="fichers_block_title font_bold">Страт.сессии</div>
+						<div class="fichers_block_subtitle">100+ участников</div>
+					</div>
 				</div>
 			</div>
 			<!--
@@ -798,17 +836,15 @@
 			<div class="content_inside">
 				<div class="review_case">
 					<div class="case_one_uptitle font_bold">Отзывы клиентов</div>
-					<div class="font_bold">Спасибо вам огромное! Вы волшебники! Не знаю как работает ваша магия, но это
-						чудесно! Вы крутые)</div>
-					<div class="review_case_who">Pfizer</div>
+					<div id="feedback" style="display: none">
+						<div class="font_bold" id="feedback_text"></div>
+						<div class="review_case_who" id="feedback_company"></div>
+					</div>
 					<!--<div class="review_case_who_logo"><img src="img/clients/pfizer.png"></div>-->
 					<div class="review_case_pad">
-						<div class="review_case_icos"><img src="img/review_ico_2.svg"></div>
-						<div class="review_case_icopad"></div>
-						<div class="review_case_icopad"></div>
-						<div class="review_case_icopad go_active"></div>
-						<div class="review_case_icos"><img src="img/review_ico_1.svg"></div>
-						<div class="cle"></div>
+						<div class="review_case_icos" id="prev_feedback"><img src="img/review_ico_1.svg"></div>
+						<div class="review_case_icopads" id="feedback_pads"></div>
+						<div class="review_case_icos" id="next_feedback"><img src="img/review_ico_2.svg"></div>
 					</div>
 				</div>
 			</div>
